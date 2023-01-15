@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/da50f8bfa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img
+            class="nav__logo--img"
+            src="./assets/1910.i309.028.F.m004.c7.cinema film production realistic transparent-07.jpg"
+            alt="logo img"
+          />
+          <h3 class="nav__logo--title">Moviio</h3>
+        </div>
+        <div class="links">
+          <a class="nav__link nav__link--anchor" href="#">Home</a>
+          <a class="nav__link nav__link--anchor btn__find-your-movie" href="#"
+            >Find Your Movie</a
+          >
+          <a class="nav__link nav__link--anchor" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section id="landing-page">
+      <div class="container">
+        <div class="row">
+          <div class="landing__description">
+            <h1 class="landing__description--title">
+              The Ultimate Movie Database.
+            </h1>
+            <h2 class="landing__description--sub-title">
+              FIND YOUR DESIRED<span class="orange"> MOVIE</span>
+            </h2>
+            <div class="search-bar__container">
+              <input
+                class="search-bar"
+                placeholder="Search any movie here..."
+                type="text"
+              />
+              <button class="not-loading"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="spinner">
+                <!-- <i class="fa-solid fa-spinner"></i> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
