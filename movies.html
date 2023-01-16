@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <script
+      src="https://kit.fontawesome.com/da50f8bfa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/movies.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container nav__movie">
+        <div class="nav__logo">
+          <img
+            class="nav__logo--img"
+            src="./assets/1910.i309.028.F.m004.c7.cinema film production realistic transparent-07.jpg"
+            alt="logo img"
+          />
+          <h3 class="nav__logo--title">Moviio</h3>
+        </div>
+        <div class="links">
+          <a class="nav__link nav__link--anchor" href="/index.html">Home</a>
+          <a
+            class="nav__link nav__link--anchor btn__find-your-movie"
+            href="/index.html"
+            >Find Your Movie</a
+          >
+          <a class="nav__link nav__link--anchor" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row row--movie">
+        <!-- <button><a class="back--btn" href="/index.html">Back</a></button> -->
+        <h1 class="search-results skeleton">Search Results:</h1>
+        <input class="search--change" type="number" placeholder="1" onchange="onSearchChange(event)">
+        <div class="landing__movies--container">
+          <div class="landing__movies--wrapper">
+            <div class="landing__movies--description">
+              <h3 class="landing__movies--title">Title</h3>
+              <p class="landing__movies--year">Year</p>
+              <p class="landing__movies--imdbID">imdbID</p>
+              <p class="landing__movies--type">Type</p>
+              <img class="landing__movies--img" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <ul class="pagination">
+          <li class="page-item">
+            <button class="page-link" id="prevButton">Previous</button>
+          </li>
+          <li class="page-item">
+            <button class="page-link" id="nextButton">Next</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
